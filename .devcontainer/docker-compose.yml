@@ -3,6 +3,7 @@ services:
     image: ghcr.io/typst/typst:latest
     volumes:
       - ..:/workspace
+      - ../fonts:/usr/share/fonts/custom
     working_dir: /workspace
     entrypoint: ["sleep", "infinity"]
 
@@ -10,6 +11,7 @@ services:
     image: ghcr.io/typst/typst:latest
     volumes:
       - ..:/workspace
+      - ../fonts:/usr/share/fonts/custom
     working_dir: /workspace
 
 

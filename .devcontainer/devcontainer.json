@@ -1,0 +1,17 @@
+{
+  "name": "CV Typst Dev",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "cv-dev",
+  "workspaceFolder": "/workspace",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "typst.typst",
+        "ms-vscode.powershell"
+      ]
+    }
+  }
+}
+
+

@@ -1,0 +1,16 @@
+services:
+  cv-dev:
+    image: ghcr.io/typst/typst:latest
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    entrypoint: ["sleep", "infinity"]
+
+  cv-build:
+    image: ghcr.io/typst/typst:latest
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+
+
+

@@ -1,35 +1,23 @@
-#import "@preview/modern-cv:0.9.0": *
+#import "../lib.typ": *
 
 #show: resume.with(
   author: (
-    firstname: "John",
-    lastname: "Smith",
-    email: "js@example.com",
-    homepage: "https://example.com",
-    phone: "(+1) 111-111-1111",
-    github: "DeveloperPaul123",
-    twitter: "typstapp",
-    scholar: "",
-    orcid: "0000-0000-0000-000X",
-    birth: "January 1, 1990",
-    linkedin: "Example",
-    address: "111 Example St. Example City, EX 11111",
+    firstname: "Hyeonseok",
+    lastname: "Oh",
+    email: "asfd0002@gmail.com",
+    phone: "(+82)010-4564-7344",
+    github: "HyeonseokOh",
+    birth: "Aug 5, 1998",
+    linkedin: "hyeonseok-oh",
+    address: "Incheon, Republic of Korea",
     positions: (
-      "Software Engineer",
-      "Software Architect",
-      "Developer",
+      "Deep Learning Vision Engineer",
     ),
-    custom: (
-      (
-        text: "Youtube Channel",
-        icon: "youtube",
-        link: "https://example.com",
-      ),
-    ),
+    custom: (),
   ),
-  keywords: ("Engineer", "Architect"),
-  description: "John complete resume",
-  profile-picture: image("profile.png"),
+  keywords: ("Deep Learning", "Computer Vision", "Embedded", "Real-time", "Optimization"),
+  description: "Deep Learning Vision Engineer resume",
+  profile-picture: image("profile_hyeonseokoh.jpg"),
   date: datetime.today().display(),
   language: "en",
   colored-headers: true,
@@ -38,139 +26,143 @@
   paper-size: "us-letter",
 )
 
+= Profile
+
+I am a deep learning vision engineer who has worked on real-world AI and vision projects such as vehicle dashcam PoCs and traffic-light state recognition systems.
+I enjoy solving end-to-end problems from model design and training to deployment, and I am especially interested in building practical, real-time systems that improve user experience.
+
 = Experience
 
 #resume-entry(
-  title: "Senior Software Engineer",
-  location: "Example City, EX",
-  date: "2019 - Present",
-  description: "Example, Inc.",
-  title-link: "https://github.com/DeveloperPaul123",
+  title: "Deep Learning Vision Engineer",
+  location: "Thinkware, Seongnam, Republic of Korea",
+  date: "Nov 2022 - Dec 2024",
+  description: "AI / Computer Vision Engineer",
 )
 
 #resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
-]
-
-#resume-entry(
-  title: "Software Engineer",
-  location: "Example City, EX",
-  date: "2011 - 2019",
-  description: "Previous Company, Inc.",
-)
-
-#resume-item[
-  // content doesn't have to be bullet points
-  #lorem(72)
-]
-
-#resume-entry(title: "Intern", location: "Example City, EX")
-
-#resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
+  - Designed and improved DL/ML vision models and built training pipelines based on large-scale vision data
+  - Optimized and deployed models for real-time inference on embedded products
+  - Designed models and system architecture for AI dashcam and traffic-light detection/caution (TLDS/TLCA) features
+  - Developed a YOLO-based license plate recognition (LPR) model and operated the plate/character annotation pipeline
+  - Improved the overall development process by leveraging internship experience with LDWS vision demo design and initial data labeling
 ]
 
 = Projects
 
 #resume-entry(
-  title: "Thread Pool C++ Library",
-  location: [#github-link("DeveloperPaul123/thread-pool")],
-  date: "May 2021 - Present",
-  description: "Designer/Developer",
+  title: "AI Dashcam PoC",
+  location: "Vehicle Dashcam PoC System",
+  date: "Dec 2023 - Dec 2024",
+  description: "Engineer",
 )
 
 #resume-item[
-  - Designed and implemented a thread pool library in C++ using the latest C++20 and C++23 features.
-  - Wrote extensive documentation and unit tests for the library and published it on Github.
+  - Collaborated with Denso Solution to design and develop an AI-based vehicle dashcam proof-of-concept system
+  - Integrated distance and heading estimation by combining mono depth predictions with vehicle heading-angle labels
+  - Implemented a PoC demo that detects risky situations based on multi-object perception and validated it on real driving videos
 ]
 
 #resume-entry(
-  title: "Event Bus C++ Library",
-  location: github-link("DeveloperPaul123/eventbus"),
-  date: "Sep. 2019 - Present",
-  description: "Designer/Developer",
+  title: "Traffic Light Detection & Caution System (TLDS/TLCA)",
+  location: "Traffic Light State Recognition",
+  date: "Feb 2023 - Dec 2024",
+  description: "Engineer",
 )
 
 #resume-item[
-  - Designed and implemented an event bus library using C++17.
-  - Wrote detailed documentation and unit tests for the library and published it on Github.
+  - Reimplemented the Traffic Light Caution Alarm (TLCA) feature with an in-house vision-based solution, reducing dependence on legacy logic and operating cost
+  - Designed and developed a lightweight CNN-based traffic-light state classification model using detection outputs and deployed it to a production dashcam (QXD8000mini)
+  - Built a performance verification and data feedback loop using in-vehicle and real-road video data
+]
+
+#resume-entry(
+  title: "YOLO-based License Plate Recognition (LPR)",
+  location: "Thinkware Internal Project",
+  date: "Nov 2022 - Feb 2023",
+  description: "Intern",
+)
+
+#resume-item[
+  - Conducted training and evaluation experiments for a YOLO-based license-plate and character detector
+  - Defined labeling policies for plate/character single-object annotations and built the annotation pipeline
+  - Helped design the training experiment process and improved data quality through iterative feedback
+]
+
+#resume-entry(
+  title: "Embedded Driving Robot & Lane Tracer",
+  location: "Sunmoon University Project",
+  date: "Sep 2021 - Jun 2022",
+  description: "Student Project",
+)
+
+#resume-item[
+  - Built an embedded driving demo with Jetson Nano for path and traffic-sign recognition and a Raspberry Pi (OpenCV) based lane-tracer
+  - Designed real-time vision processing pipelines and gained hands-on experience with sensor and motor control on embedded platforms
 ]
 
 = Skills
 
 #resume-skill-item(
-  "Programming Languages",
+  "Programming",
   (
-    strong("C++"),
+    strong("C/C++"),
     strong("Python"),
-    "Rust",
-    "Java",
-    "C#",
-    "JavaScript",
-    "TypeScript",
+    "CUDA",
   ),
 )
-#resume-skill-item("Spoken Languages", (strong("English"), "Spanish"))
 #resume-skill-item(
-  "Programs",
+  "Frameworks/Libraries",
   (
-    strong("Excel"),
-    "Word",
-    "Powerpoint",
-    "Visual Studio",
+    strong("PyTorch"),
+    "TensorFlow",
+    "OpenCV",
   ),
 )
-// spacing fix, not needed if you use `resume-skill-grid`
+#resume-skill-item(
+  "Tools & Platforms",
+  (
+    "Git",
+    "Docker",
+    "NVIDIA Jetson",
+    "Raspberry Pi",
+  ),
+)
 #block(below: 0.65em)
-
-// An alternative way of list out your resume skills
-// #resume-skill-grid(
-//   categories_with_values: (
-//     "Programming Languages": (
-//       strong("C++"),
-//       strong("Python"),
-//       "Rust",
-//       "Java",
-//       "C#",
-//       "JavaScript",
-//       "TypeScript",
-//     ),
-//     "Spoken Languages": (
-//       strong("English"),
-//       "Spanish",
-//       "Greek",
-//     ),
-//     "Programs": (
-//       strong("Excel"),
-//       "Word",
-//       "Powerpoint",
-//       "Visual Studio",
-//       "git",
-//       "Zed"
-//     ),
-//     "Really Really Long Long Long Category": (
-//       "Thing 1",
-//       "Thing 2",
-//       "Thing 3"
-//     )
-//   ),
-// )
 
 = Education
 
 #resume-entry(
-  title: "Example University",
-  location: "Example City, EX",
-  date: "August 2014 - May 2019",
-  description: "B.S. in Computer Science",
+  title: "Sunmoon University",
+  location: "Asan, Republic of Korea",
+  date: "Mar 2017 - Aug 2023",
+  description: "B.S. in Electronic Engineering",
 )
 
 #resume-item[
-  - #lorem(20)
-  - #lorem(15)
-  - #lorem(25)
+  - GPA: 3.65 / 4.5
+]
+
+= Patents & Publications
+
+#resume-entry(
+  title: "Electronic device and method for low-resolution image restoration using an image-restoration model with global contextual features",
+  location: "KR 10-2024-0037475",
+  date: "Sep 2024",
+  description: "Inventor: Hyeonseok Oh et al.",
+)
+
+#resume-item[
+  - Proposed an image restoration approach that leverages global contextual information to improve recognition performance on low-quality images
+]
+
+#resume-entry(
+  title: "Electronic device and method for acquiring training data",
+  location: "KR 10-2024-0062807",
+  date: "Aug 2023",
+  description: "Inventor: Hyeonseok Oh et al.",
+)
+
+#resume-item[
+  - Designed an electronic device and procedure for efficiently collecting training data in real environments, reducing data collection cost
 ]

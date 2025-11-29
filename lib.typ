@@ -461,7 +461,7 @@
       ],
       align(left + horizon)[
         #block(
-          clip: true,
+          clip: false,
           stroke: 0pt,
           radius: 2cm,
           width: 4cm,

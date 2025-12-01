@@ -106,15 +106,15 @@ I enjoy solving end-to-end problems from model design and training to deployment
 #resume-skill-item(
   "Programming",
   (
-    strong("C/C++"),
-    strong("Python"),
+    "C/C++",
+    "Python",
     "CUDA",
   ),
 )
 #resume-skill-item(
   "Frameworks/Libraries",
   (
-    strong("PyTorch"),
+    "PyTorch",
     "TensorFlow",
     "OpenCV",
   ),
@@ -124,8 +124,6 @@ I enjoy solving end-to-end problems from model design and training to deployment
   (
     "Git",
     "Docker",
-    "NVIDIA Jetson",
-    "Raspberry Pi",
   ),
 )
 #block(below: 0.65em)
@@ -146,23 +144,34 @@ I enjoy solving end-to-end problems from model design and training to deployment
 = Patents & Publications
 
 #resume-entry(
-  title: "Electronic device and method for low-resolution image restoration using an image-restoration model with global contextual features",
-  location: "KR 10-2024-0037475",
-  date: "Sep 2024",
-  description: "Inventor: Hyeonseok Oh et al.",
+  title: "VEHICLE ELECTRONIC DEVICE AND METHOD FOR PROVIDING NOTIFICATION RELATED TO THE PARKING ENVIRONMENT BASED ON IMAGE READING",
+  location: "KR 10-2024-0019048",
+  date: "Aug 2023",
+  description: "Inventor",
 )
 
 #resume-item[
-  - Proposed an image restoration approach that leverages global contextual information to improve recognition performance on low-quality images
+  - Camera-based parking-environment understanding and real-time driver notification system.
 ]
 
 #resume-entry(
-  title: "Electronic device and method for acquiring training data",
-  location: "KR 10-2024-0062807",
-  date: "Aug 2023",
-  description: "Inventor: Hyeonseok Oh et al.",
+  title: "ELECTRONIC DEVICE AND METHOD FOR OBTAINING TRAINING DATA",
+  location: "KR 10-2025-0140687",
+  date: "Mar 2024",
+  description: "Inventor",
 )
 
 #resume-item[
-  - Designed an electronic device and procedure for efficiently collecting training data in real environments, reducing data collection cost
+  - Automated framework for collecting and labeling training data for ML-based perception systems.
+]
+
+#resume-entry(
+  title: "ELECTRONIC DEVICE, METHOD, AND NON-TRANSITORY COMPUTER READABLE STORAGE MEDIUM FOR RESTORING LOW-RESOLUTION IMAGE BY USING IMAGE RESTORATION MODEL FOR EXTRACTING GLOBAL CONTEXT INFORMATION",
+  location: "KR 10-2025-0163181",
+  date: "May 2024",
+  description: "Inventor",
+)
+
+#resume-item[
+  - Dual-encoder global-context image restoration model using cross-attention for high-resolution output.
 ]
